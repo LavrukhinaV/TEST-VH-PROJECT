@@ -1,9 +1,0 @@
-.mobile-menu__links {
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 39px;
-  cursor: pointer;
-}
