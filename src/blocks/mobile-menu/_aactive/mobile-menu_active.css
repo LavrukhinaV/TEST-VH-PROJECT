@@ -1,6 +1,7 @@
 .mobile-menu_active {
   left: 0;
   animation: move 1s ease-in-out;
+  box-shadow: 2px 5px 15px rgba(26, 31, 39, 0.12), 10px 15px 40px rgba(26, 31, 39, 0.08);
 }
 
 @keyframes move {
@@ -20,4 +21,12 @@
     left: 0;
     width: 375px;
   }
-} 
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu_active {
+    left: 0;
+    animation: none;
+    box-shadow: none;
+  }
+}

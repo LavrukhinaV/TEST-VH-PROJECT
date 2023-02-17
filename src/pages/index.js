@@ -1,15 +1,17 @@
 import './index.css';
 
-import {mobileMenu, mobileMenuButtonOpen, mobileMenuButtonClose, prevBtn, nextBtn,
-  slides, mobileMenuActiveClass, sliderImageAppearingClass, sliderImageDisappearingClass,
+import {page, mobileMenu, mobileMenuButtonOpen, mobileMenuButtonClose, prevBtn, nextBtn,
+  slides, pageFixedClass, mobileMenuActiveClass, sliderImageAppearingClass, sliderImageDisappearingClass,
   sliderImageReverceAppearingClass, sliderImageReverceDisappearingClass} from '../utils/constants.js';
 
 function openMobileMenu() {
   mobileMenu.classList.add(mobileMenuActiveClass);
+  page.classList.add(pageFixedClass);
 };
 
 function closeMobileMenu() {
   mobileMenu.classList.remove(mobileMenuActiveClass);
+  page.classList.remove(pageFixedClass);
 };
 
 document.addEventListener('click', e => {
@@ -22,6 +24,7 @@ document.addEventListener('click', e => {
     closeMobileMenu();
   }
 })
+
 
 mobileMenuButtonOpen.addEventListener('click', openMobileMenu);
 mobileMenuButtonClose.addEventListener('click', closeMobileMenu)
