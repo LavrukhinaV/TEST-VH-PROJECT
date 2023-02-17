@@ -1,0 +1,11 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    gap: 24px;
+  }
+}

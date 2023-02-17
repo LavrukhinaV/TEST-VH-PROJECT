@@ -1,0 +1,24 @@
+.slider__image {
+  position: absolute;
+  /* margin-left: -192px;
+  margin-top: -192px;
+  left: 50%;
+  top: 50%; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  right: 0;
+  opacity: 0;
+  width: 384px;
+  height: 384px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider__image {
+    width: 309px;
+    height: 309px;
+  }
+}

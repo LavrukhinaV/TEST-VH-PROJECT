@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpack</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <button class="header__open-menu-button"></button>
+        <a class="header__number" href="tel:+78000000000">8 800 000 00 00</a>
+        <div class="mobile-menu">
+          <button class="mobile-menu__button-close"></button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__links">
+              <li class="mobile-menu__link">Menu 1<span class="mobile-menu__span">Go</span></li>
+              <li class="mobile-menu__link">Menu 2<span class="mobile-menu__span">Go</span></li>
+              <li class="mobile-menu__link">Menu 3<span class="mobile-menu__span">Go</span></li>
+              <li class="mobile-menu__link">Menu 4<span class="mobile-menu__span">Go</span></li>
+            </ul>
+            <a class="mobile-menu__number" href="tel:+78000000000">8 800 000 00 00</a>
+          </nav>
+        </div>
+      </header>
+      <main class="content">
+        <section class="about">
+          <h1 class="about__title">Bibendum neque egestas congue</h1>
+          <h2 class="about__subtitle">lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus 
+            est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat</h2>
+          <button class="about__button">Click me</button>
+        </section>
+        <section class="slider">
+          <div class="slider__wrapper">
+            <img src="<%=require('./images/slide1.png')%>" class="slider__image slider__image_visible" id='1'>
+            <img src="<%=require('./images/slide2.png')%>" class="slider__image" id='2'>
+            <img src="<%=require('./images/slide3.png')%>" class="slider__image" id='3'>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button slider__button_left"></button>
+            <button class="slider__button slider__button_right"></button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html> 
